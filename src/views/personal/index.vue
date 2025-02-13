@@ -254,7 +254,12 @@ export default defineComponent({
 			padding: 0 15px;
 			.personal-title {
 				font-size: 18px;
-				@include text-ellipsis(1);
+				overflow: hidden;
+				word-break: break-all;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 1;
+				-webkit-box-orient: vertical;
 			}
 			.personal-item {
 				display: flex;
@@ -262,10 +267,20 @@ export default defineComponent({
 				font-size: 13px;
 				.personal-item-label {
 					color: var(--el-text-color-secondary);
-					@include text-ellipsis(1);
+					overflow: hidden;
+					word-break: break-all;
+					text-overflow: ellipsis;
+					display: -webkit-box;
+					-webkit-line-clamp: 1;
+					-webkit-box-orient: vertical;
 				}
 				.personal-item-value {
-					@include text-ellipsis(1);
+					overflow: hidden;
+					word-break: break-all;
+					text-overflow: ellipsis;
+					display: -webkit-box;
+					-webkit-line-clamp: 1;
+					-webkit-box-orient: vertical;
 				}
 			}
 		}
@@ -290,7 +305,12 @@ export default defineComponent({
 					padding-bottom: 10px;
 					.personal-info-li-title {
 						display: inline-block;
-						@include text-ellipsis(1);
+						overflow: hidden;
+						word-break: break-all;
+						text-overflow: ellipsis;
+						display: -webkit-box;
+						-webkit-line-clamp: 1;
+						-webkit-box-orient: vertical;
 						color: var(--el-text-color-secondary);
 						text-decoration: none;
 					}
@@ -372,7 +392,12 @@ export default defineComponent({
 					}
 					.personal-edit-safe-item-left-value {
 						color: var(--el-text-color-secondary);
-						@include text-ellipsis(1);
+						overflow: hidden;
+						word-break: break-all;
+						text-overflow: ellipsis;
+						display: -webkit-box;
+						-webkit-line-clamp: 1;
+						-webkit-box-orient: vertical;
 						margin-right: 15px;
 					}
 				}
